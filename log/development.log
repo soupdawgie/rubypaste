@@ -17338,3 +17338,1556 @@ Processing by SnippetsController#index as HTML
   Rendered layouts/_header.html.erb (3.0ms)
   Rendered layouts/_footer.html.erb (0.5ms)
 Completed 200 OK in 394ms (Views: 386.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 20:52:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.0ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (1.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/index.html.erb within layouts/application (232.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 10451ms (Views: 10417.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.self-7d507cb50be48c1b6d1c37069c01ee6224c1549fc2947652a9f69508d8a5b84e.css?body=1" for ::1 at 2016-03-27 20:52:33 +0300
+
+
+Started GET "/assets/favicon-fd57f4115737af2da295ad7d6eb7885c79b1c1aac4d8c654c80da55ee74343d7.ico" for ::1 at 2016-03-27 20:52:34 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:52:40 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (100.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 284ms (Views: 282.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:54:00 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4828ms (Views: 4827.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/custom.self-f97f6e8ec13223c4699170d30e41344e83e55bce1210a0208e87b2c6c65d0287.css?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:54:05 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:55:07 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (11.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 5853ms (Views: 5850.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/custom.self-6c86a934e6bf8b659bc5e7b1ffffd5fac1feebcf10bf1d68c7bb69bb917ca2ab.css?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:55:13 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:55:40 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5549ms (Views: 5548.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-97ac3450ac1570f2531b7c9fb4f6e8e4d3bc65363a36bb9230811e678a1fce7b.css?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:55:46 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:56:01 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5429ms (Views: 5428.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/custom.self-968b63e875082c61425f163e83d5154292aa16a12ecc0d2eaa50a24f6f1f8b7f.css?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:56:06 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:56:30 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4481ms (Views: 4479.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/custom.self-6b9cc1e089027cde6e818faad6d532417675aea8d98d578dc66d67a878a7f9f4.css?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:56:35 +0300
+
+
+Started POST "/snippets" for ::1 at 2016-03-27 20:57:12 +0300
+Processing by SnippetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PYnDdZqPZUbZQh774ONDz7+ny8ofO+hyXYBgZyx5yglV6Sdx7Hy2H5Oe4Ij5PK1mwe3dU0jkyIcBp73fdxVyuQ==", "snippet"=>{"title"=>"27 March 2016, 20:56", "code"=>"<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t  <title><%= full_title(yield(:title)) %></title>\r\n\t  <%= favicon_link_tag %>\r\n\t  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>\r\n\t  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>\r\n\t  <%= csrf_meta_tags %>\r\n\t  <%= render 'layouts/shim' %>\r\n\t</head>\r\n\t<body>\r\n\t\t<%= render 'layouts/header' %>\r\n\t\t<div class=\"container\">\r\n\t\t\t<% flash.each do |message_type, message| %>\r\n\t\t\t\t<%= content_tag(:div, message, class: \"alert alert-\#{message_type}\") %>\r\n\t\t\t<% end %>\r\n\t\t<%= yield %>\r\n\t\t<%= render 'layouts/footer' %>\r\n\t\t<%= debug(params) if Rails.env.development? %>\r\n\t\t</div>\r\n\t</body>\r\n</html>\r\n"}, "commit"=>"Save!"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (9.9ms)[0m  [1mINSERT INTO "snippets" ("code", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t  <title><%= full_title(yield(:title)) %></title>\r\n\t  <%= favicon_link_tag %>\r\n\t  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>\r\n\t  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>\r\n\t  <%= csrf_meta_tags %>\r\n\t  <%= render 'layouts/shim' %>\r\n\t</head>\r\n\t<body>\r\n\t\t<%= render 'layouts/header' %>\r\n\t\t<div class=\"container\">\r\n\t\t\t<% flash.each do |message_type, message| %>\r\n\t\t\t\t<%= content_tag(:div, message, class: \"alert alert-\#{message_type}\") %>\r\n\t\t\t<% end %>\r\n\t\t<%= yield %>\r\n\t\t<%= render 'layouts/footer' %>\r\n\t\t<%= debug(params) if Rails.env.development? %>\r\n\t\t</div>\r\n\t</body>\r\n</html>\r\n"], ["title", "27 March 2016, 20:56"], ["created_at", "2016-03-27 17:57:12.360033"], ["updated_at", "2016-03-27 17:57:12.360033"]]
+  [1m[35m (95.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/snippets/21
+Completed 302 Found in 132ms (ActiveRecord: 104.8ms)
+
+
+Started GET "/snippets/21" for ::1 at 2016-03-27 20:57:12 +0300
+Processing by SnippetsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mSnippet Load (0.0ms)[0m  [1mSELECT  "snippets".* FROM "snippets" WHERE "snippets"."id" = ?  ORDER BY "snippets"."created_at" DESC LIMIT 1[0m  [["id", 21]]
+  Rendered snippets/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 204ms (Views: 156.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:57:20 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 173ms (Views: 171.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:58:38 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4921ms (Views: 4919.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/custom.self-3fb7cde7deac7fe27610d52182664af3aa0deabf58ca2cecad67b4c4ae794418.css?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:58:43 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:59:17 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4586ms (Views: 4584.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/custom.self-5448ac0e3dd170bede46c366dec54a2fd7c8d9ecdc14e1f692711af57fcde59b.css?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:59:22 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 20:59:49 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4374ms (Views: 4373.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-388a04508798fa6a8536a602da3e4946445f8ed4fd4d2e9c28dc66af8e16e2e7.css?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 20:59:53 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:00:08 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4556ms (Views: 4554.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/custom.self-1f1b843c6939655721a08c4e152b5cda3f0658bd3f2db3081acc00360f3d7990.css?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:00:13 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:00:27 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4364ms (Views: 4363.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/custom.self-34fe767ffbb68eb657d4dc158b90ccb2e264c2eae3d48e4275ef561ce99b59d7.css?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:00:32 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:01:35 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4411ms (Views: 4409.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/custom.self-0bacd2c43dfa3b14f52b7e2a44e396b6aa44fe0e8d88a491ecff6712feff5a77.css?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:01:40 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:02:10 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4423ms (Views: 4422.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-983af541d4b8b943cc18dda125280182e9ae193c5fcec169350a7a0d003400b9.css?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:02:15 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:03:42 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4712ms (Views: 4708.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/custom.self-9f501ee533ea7446cdf0c46912215799228b27ffeaedeae7896c0ee34738ecca.css?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:03:47 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:04:02 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4564ms (Views: 4561.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-54964a1b1f5ee4025f478f0bbd1a290901a3bc2354c20e5be32c3e099803238c.css?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:04:07 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:04:21 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4752ms (Views: 4750.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/custom.self-b5adf190e487c872a519fe840550c4511b8fee62088ca48c89828204bd40be6f.css?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:04:25 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:04:26 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:04:37 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4930ms (Views: 4929.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/custom.self-12699b3e91c7c83368f07e01043e464f05710f8aaf9395ecf3bb25c1c420002f.css?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:04:42 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:04:55 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4707ms (Views: 4705.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/custom.self-1407b80ac28582a53341f1c7660ff0e1f254778cebd7ce1ea2cdadcf4d5d7ad6.css?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:05:00 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:05:11 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5191ms (Views: 5189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-a47a3f5c06c054aaaf93efcbf2c638cd4420da8d98759292e769f7a28b2bc4fb.css?body=1" for ::1 at 2016-03-27 21:05:16 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:05:17 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:06:32 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4886ms (Views: 4884.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/custom.self-7e4e3fa01312992827abfddf231b96f0c92dc8d5fbc2f5d416ca0ad73f368e25.css?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:06:37 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:07:03 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4603ms (Views: 4600.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/custom.self-de43787ff574783794f2b345bb7720df3115bf7d57db15a6a8431ae3b4e6f9ca.css?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:07:08 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:07:24 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4747ms (Views: 4746.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/custom.self-af63fb116e39e6151aae2f9dfd800b1856bcad201ebe8bbeb9f24a3c70393359.css?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:07:29 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:07:38 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4588ms (Views: 4587.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/custom.self-aeacb059ac252a73b586714b7f461958bab68d52c9ce05e16669c17186fbfbc0.css?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:07:43 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:07:55 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 4635ms (Views: 4633.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-fbf0988dbdf5f27e7ebf2fc20f2b1e1176542f1134da9d93fea16a3ea2f2256d.css?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:08:00 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:09:27 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5186ms (Views: 5177.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:09:32 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:09:32 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:09:32 +0300
+
+
+Started GET "/assets/custom.self-d81113257a55c4d131548e9b3e666340ed9c6f984d9c9482479781801bba126e.css?body=1" for ::1 at 2016-03-27 21:09:32 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:09:32 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:09:32 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:09:33 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:09:33 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:09:33 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:09:50 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4573ms (Views: 4571.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/custom.self-2615f8d38387e7ee30ff6357581807f6568ad3adbf2437423946985e14b2ab8e.css?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:09:55 +0300
+
+
+Started GET "/snippets/new" for ::1 at 2016-03-27 21:10:44 +0300
+Processing by SnippetsController#new as HTML
+  Rendered snippets/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4498ms (Views: 4495.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-537fbcd710e63af70fc38cfe243e31232f3823b432102f34e1c1ddb251fb2572.css?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:10:48 +0300
+
+
+Started GET "/" for ::1 at 2016-03-27 21:11:28 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (1.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/index.html.erb within layouts/application (213.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 387ms (Views: 386.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 21:11:28 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/index.html.erb within layouts/application (151.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 302ms (Views: 299.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 21:11:49 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.0ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/index.html.erb within layouts/application (153.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4874ms (Views: 4872.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-734fc328d5b264548ecbcce3ac758e065640436ced265a96e991dbe5783f459e.css?body=1" for ::1 at 2016-03-27 21:11:53 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:11:54 +0300
+
+
+Started GET "/" for ::1 at 2016-03-27 21:12:13 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (1.1ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/index.html.erb within layouts/application (189.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5119ms (Views: 5117.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.self-f155201661265949e6372125c0308fc224bef9751cbc652594e8ed5d5ee4e344.css?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:12:18 +0300
+
+
+Started GET "/" for ::1 at 2016-03-27 21:12:48 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/index.html.erb within layouts/application (152.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 313ms (Views: 311.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/snippets/21/edit" for ::1 at 2016-03-27 21:12:57 +0300
+Processing by SnippetsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mSnippet Load (0.0ms)[0m  SELECT  "snippets".* FROM "snippets" WHERE "snippets"."id" = ?  ORDER BY "snippets"."created_at" DESC LIMIT 1  [["id", 21]]
+  Rendered snippets/edit.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 181.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/snippets/21/edit" for ::1 at 2016-03-27 21:15:20 +0300
+Processing by SnippetsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mSnippet Load (0.5ms)[0m  [1mSELECT  "snippets".* FROM "snippets" WHERE "snippets"."id" = ?  ORDER BY "snippets"."created_at" DESC LIMIT 1[0m  [["id", 21]]
+  Rendered snippets/edit.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4440ms (Views: 4435.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:15:24 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:15:24 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:15:24 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:15:24 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:15:24 +0300
+
+
+Started GET "/assets/custom.self-b5ffe111bc45c876159bfda42df4b261872f63c6635ea25afcc51852b9f16ec0.css?body=1" for ::1 at 2016-03-27 21:15:24 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:15:25 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:15:25 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:15:25 +0300
+
+
+Started GET "/snippets/21/edit" for ::1 at 2016-03-27 21:15:37 +0300
+Processing by SnippetsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mSnippet Load (0.0ms)[0m  SELECT  "snippets".* FROM "snippets" WHERE "snippets"."id" = ?  ORDER BY "snippets"."created_at" DESC LIMIT 1  [["id", 21]]
+  Rendered snippets/edit.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4723ms (Views: 4719.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/custom.self-76453167b609ee85f1819a39002b525c2a32b212b78527c1b18496914a93e47b.css?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:15:42 +0300
+
+
+Started GET "/" for ::1 at 2016-03-27 21:16:34 +0300
+Processing by SnippetsController#index as HTML
+  [1m[36mSnippet Load (0.5ms)[0m  [1mSELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "snippets"
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (16.1ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/index.html.erb within layouts/application (202.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 377ms (Views: 381.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 21:16:34 +0300
+Processing by SnippetsController#index as HTML
+  [1m[36mSnippet Load (0.5ms)[0m  [1mSELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "snippets"
+  Rendered snippets/_snippet.html.erb (1.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/index.html.erb within layouts/application (148.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 295ms (Views: 293.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/snippets/21/edit" for ::1 at 2016-03-27 21:16:37 +0300
+Processing by SnippetsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mSnippet Load (0.5ms)[0m  [1mSELECT  "snippets".* FROM "snippets" WHERE "snippets"."id" = ?  ORDER BY "snippets"."created_at" DESC LIMIT 1[0m  [["id", 21]]
+  Rendered snippets/edit.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 163ms (Views: 160.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 21:16:43 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/index.html.erb within layouts/application (175.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 354ms (Views: 353.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 21:16:55 +0300
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "snippets"[0m
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.0ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/_snippet.html.erb (0.5ms)
+  Rendered snippets/index.html.erb within layouts/application (145.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 290ms (Views: 288.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/custom.self-fbf0988dbdf5f27e7ebf2fc20f2b1e1176542f1134da9d93fea16a3ea2f2256d.css?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:16:55 +0300
+
+
+Started GET "/" for ::1 at 2016-03-27 21:18:27 +0300
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.2) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.2) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (3.0.0) lib/web_console/middleware.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (900.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/console.js.erb within layouts/javascript (750.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/index.html.erb (1739.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-27 21:18:30 +0300
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.2) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.2) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (3.0.0) lib/web_console/middleware.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (792.3ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/console.js.erb within layouts/javascript (739.1ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Ruby/lib/ruby/gems/2.2.0/gems/web-console-3.0.0/lib/web_console/templates/index.html.erb (1687.5ms)
+  [1m[36m (133.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (108.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSnippets (20160326060646)
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "snippets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "code" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160326060646"]]
+  [1m[35m (120.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-03-27 21:19:10 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SnippetsController#index as HTML
+  [1m[35mSnippet Load (0.5ms)[0m  SELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0
+  Rendered snippets/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (24.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 590ms (Views: 571.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/favicon-fd57f4115737af2da295ad7d6eb7885c79b1c1aac4d8c654c80da55ee74343d7.ico" for ::1 at 2016-03-27 21:19:11 +0300
+
+
+Started GET "/" for ::1 at 2016-03-27 21:20:36 +0300
+Processing by SnippetsController#index as HTML
+  [1m[36mSnippet Load (0.0ms)[0m  [1mSELECT  "snippets".* FROM "snippets"  ORDER BY "snippets"."created_at" DESC LIMIT 10 OFFSET 0[0m
+  Rendered snippets/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4578ms (Views: 4576.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/snippets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/custom.self-7582e1ee9235e1833b292f789f4a3799a807bb96deeac5addb4e75270eefd0b2.css?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/snippets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/ruby-icon-mini-9891bd3fb894b41cb43ea7471dbee58c9b85fdde75d446bbc90314a7871172bf.png" for ::1 at 2016-03-27 21:20:41 +0300
+
+
+Started GET "/assets/favicon-fd57f4115737af2da295ad7d6eb7885c79b1c1aac4d8c654c80da55ee74343d7.ico" for ::1 at 2016-03-27 21:20:41 +0300
