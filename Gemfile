@@ -16,7 +16,7 @@ gem 'tzinfo-data', 										 		 platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'byebug',  		 '8.2.2'
-  gem 'sqlite3', 		 '1.3.10'
+  gem 'sqlite3', 		 '1.3.11'
   gem 'spring',  		 '1.6.3'
   gem 'web-console', '3.0'
 end

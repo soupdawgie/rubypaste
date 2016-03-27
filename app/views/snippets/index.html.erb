@@ -1,0 +1,9 @@
+<% provide(:title, 'Snippets') %>
+
+<h2>All snippets</h2>
+
+<% @snippets.each do |snippet| %>
+	<%= render snippet %>
+<% end %>
+
+<%= will_paginate %>
