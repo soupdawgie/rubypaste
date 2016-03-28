@@ -1,9 +1,11 @@
 <div class="snippet-container">
-	<span>
+	<span class="title-links">
 		<h3><%= link_to snippet.title, snippet %></h3>
-		<%= link_to "edit", edit_snippet_path(snippet), id: "sub_button" %>
+		<%= link_to "edit",   edit_snippet_path(snippet), id: "sub_button" %>
 		<%= link_to "delete", snippet, method: :delete, data: { confirm: "You sure?" },
 																	 id: "sub_button" %>
 	</span>
-	<p><%= snippet.code %></p>
+	<p class="code"><%= snippet.code %></p>
 </div>
+
+
