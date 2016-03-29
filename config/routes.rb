@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/about' => 'static_pages#about'
+
   resources :snippets
   root 'snippets#index'
 

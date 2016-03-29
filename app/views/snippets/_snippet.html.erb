@@ -1,6 +1,7 @@
 <div class="snippet-container">
 	<span class="title-links">
 		<h3><%= link_to snippet.title, snippet %></h3>
+		<%= render 'copy_link', object: snippet %>
 		<%= link_to "edit",   edit_snippet_path(snippet), id: "sub_button" %>
 		<%= link_to "delete", snippet, method: :delete, data: { confirm: "You sure?" },
 																	 id: "sub_button" %>
