@@ -1,11 +1,7 @@
+<% provide(:title,       "Create snippet") %>
+<% provide(:code_label,  "Paste your code here") %>
+<% provide(:button_text, "Save!") %>
+
 <h3>Create snippet</h3>
 
-<%= form_for @snippet do |f| %>
-	<%= f.label :title %>
-	<%= f.text_field :title, class: 'form-control' %>
-
-	<%= f.label :code, "Paste your code here" %>
-	<%= f.text_area :code, rows: 15, class: 'form-control' %>
-
-	<%= f.submit "Save!", class: "btn btn-primary" %>
-<% end %> 
+<%= render 'layouts/form' %>

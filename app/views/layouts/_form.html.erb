@@ -1,0 +1,11 @@
+<%= form_for @snippet do |f| %>
+	<%= render 'shared/error_messages', object: f.object %>
+
+	<%= f.label :title %>
+	<%= f.text_field :title, class: 'form-control' %>
+
+	<%= f.label :code, yield(:code_label) %>
+	<%= f.text_area :code, rows: 15, class: 'form-control' %>
+
+	<%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
