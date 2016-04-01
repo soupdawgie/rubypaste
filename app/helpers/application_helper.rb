@@ -8,4 +8,8 @@ module ApplicationHelper
 			page_title + " | " + base_title
 		end
 	end
+
+	def snippet_url(object)
+		root_url + object.token
+	end
 end

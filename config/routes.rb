@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
+  get '/:token' => 'snippets#show'
 
-  resources :snippets
+  resources :snippets, param: :token
   root 'snippets#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
