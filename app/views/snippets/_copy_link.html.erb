@@ -1,3 +1,10 @@
 <script>
-new Clipboard('.copy');</script>
-<a href="" class="copy" id="sub_button" data-clipboard-text="<%= root_url + object.token %>">copy link</a>
+  // Launches the clipboard.js script
+  new Clipboard('.copy');
+
+  // Prevents from jumping to the top of the page after clicking a link
+  $('a.copy').click(function(e) { e.preventDefault(); });
+</script>
+<a href="" class="copy" data-clipboard-text="<%= snippet_url(object) %>">
+  <%= glyph("share") %>
+</a>

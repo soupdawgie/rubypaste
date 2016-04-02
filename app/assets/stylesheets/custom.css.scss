@@ -1,15 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "monokai-sublime";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
 
-@mixin box_sizing {
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
-}
+/* color set */
 
-$hover_color: #bfbfbf;
-$nav_color:   #373737;
+$black: #000000;
+$red: #B11623;
+$redder: #9F111B;
+$black-eye: #292C37;
+$all-cs: #CCCCCC;
+$hover_color: #A7ACBE;
 
 /* miscellaneous */
 
@@ -19,36 +20,101 @@ $nav_color:   #373737;
   width: 100%;
   margin-top: 45px;
   margin-bottom: 45px;
-  @include box_sizing;
 }
 
 /* universal */
 
 body {
-	padding-top: 60px;
+  font-size: 16px;
+  color: white;
+	padding-top: 80px;
 	padding-bottom: 60px;
-  background: #e6e6e6; /* For the wretched ones */
-  background: -webkit-linear-gradient(left top, #e6e6e6, #333333); /* Safari */
-  background: -o-linear-gradient(bottom right, #e6e6e6, #333333); /* Opera */
-  background: -moz-linear-gradient(bottom right, #e6e6e6, #333333); /* Firefox */
-  background: linear-gradient(to bottom right, #e6e6e6, #333333); /* Chrome */
+  background-color: $all-cs;
 }
 
-html {
-  min-height: 100%;
+a {
+  color: white;
 }
 
 div.alert {
 	margin-top: 10px;
 }
 
-p.static {
-	color: white;
-	white-space: pre;
-	padding: 10px;
-	border-radius: 5px;
-	background-color: #272822;
+div.col-md-8 {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #272822;
 	a {
+    text-decoration: underline;
+		&:hover {
+			color: $hover-color;
+		}
+	}
+}
+
+.pagination {
+	margin: 0px;
+}
+
+/* header */
+
+header.navbar {
+  overflow: visible;
+	background-color: $red;
+  height: 70px;
+  nav {
+    margin-top: 5px;
+    ul {
+      margin: 4px 0px 0px 20px;
+      li {
+        a {
+          &:hover {
+            color: $hover_color;
+            background-color: transparent;
+          }
+        }
+      }
+      li.create {
+        a {
+        border-radius: 3px;
+        background-color: $black-eye;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.19);
+        &:hover {
+          border-radius: 3px;
+          color: white;
+          background-color: #363b4a;
+
+        } }
+      }
+    }
+  }
+}
+
+.brand {
+  float: left;
+  margin: 0px 10px 0px 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  letter-spacing: -2px;
+  // text-transform: uppercase;
+		&:hover {
+      color: white;
+			text-decoration: none;
+		}
+    &:focus {
+      color: white;
+      text-decoration: none;
+    }
+}
+
+/* footer */
+
+footer {
+  padding: 10px 0px 10px 113px;
+  border-top: 0.5px solid $hover-color;
+	background-color: $black-eye;
+	a {
+  	font-weight: bold;
 		color: #ff0e1d;
 		&:hover {
 			color: $hover-color;
@@ -56,70 +122,13 @@ p.static {
 		}
 	}
 }
-/* header */
-
-header.navbar {
-	background-color: $nav_color;
-}
-
-#navbar-override {
-		a {
-			color: white;
-			&:hover {
-				color: $hover_color;
-			}
-		}
-		img {
-			margin-right: 1px;
-		}
-}
-
-#logo {
-	font-family: trebuchet ms;
-	float: left;
-	padding-top: 9px;
-	margin-right: 10px;
-	/*text-transform: uppercase;*/
-	font-size: 1.7em;
-	letter-spacing: -1px;
-	color: white;
-	/*font-weight: bold;*/
-	font-style: italic;
-		&:hover {
-			color: $hover-color;
-			text-decoration: none;
-		}
-}
-
-/* footer */
-
-footer {
-	padding-left: 113px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: $nav_color;
-	border-top: 0.5px solid $hover-color;
-	small {
-		color: white;
-		font-size: 14px;
-		a {
-			color: #ff0e1d;
-			font-weight: bold;
-			&:hover {
-				color: $hover-color;
-				text-decoration: none;
-			}
-		}
-	}
-
-}
 
 /* forms */
 
 input.btn {
 	margin-top: 20px;
+  border: none;
 	background-color: #1d1d16;
-	border: none;
 	&:hover {
 		background-color: $hover-color;
 	}
@@ -131,67 +140,60 @@ form label {
 	font-weight: normal;
 }
 
-textarea#snippet_code {
+form.new_snippet, form.edit_snippet {
+  textarea {
+  padding: 10px;
+  resize: vertical;
 	border: none;
-	resize: vertical;
-	color: white;
+	font-family: monospace;
+  color: white;
 	background-color: #272822;
-	font-family: consolas;
 	white-space: pre;
-	padding: 10px;
+  }
+
+  input {
+   padding: 20px;
+   padding-left: 10px;
+   border: none;
+   font-size: 24px;
+   color: white;
+   background-color: #1d1d16;
+   white-space: pre;
+ }
 }
 
-input#snippet_title {
-	border: none;
-	color: white;
-	background-color: #1d1d16;
-	font-size: 24px;
-	font-family: trebuchet ms;
-	white-space: pre;
-	padding: 20px;
-	padding-left: 10px;
-}
+/* snippets — to be redefined http://www.w3schools.com/bootstrap/bootstrap_panels.asp */
 
-
-/* snippets */
-
-.snippet-container {
+.snippet {
 	margin-top: 20px;
 	color: white;
-	span.title-links {
+	div.title {
 		display: inline-block;
 		width: 100%;
 		padding: 10px;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-		background-color: #1d1d16;
-		font-family: trebuchet ms;
+		border-radius: 5px 5px 0px 0px;
+    background-color: #1d1d16;
 		a {
 			color: white;
 			&:hover {
 				color: $hover_color;
 				text-decoration: none;
 			}
-		}
-		a#sub_button {
-			background-color: #aa0610;
-			border-radius: 1px;
-			margin-left: 5px;
-			padding: 2px;
+      i {
+        margin-left: 5px;
+        &.glyphicon-share {
+          margin-left: 10px;
+        }
+      }
 		}
 		h3 {
 			display: inline;
 		}
 	}
-	p.code {
+	div.code {
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    font-family: monospace;
 		white-space: pre;
-		padding: 10px;
-		font-family: consolas;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
 	}
-}
-
-.pagination {
-	margin: 0px;
 }

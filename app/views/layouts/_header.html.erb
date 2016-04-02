@@ -1,13 +1,14 @@
-<header class="navbar navbar-fixed-top navbar-default" id="navbar-override">
-	<div class="container">
-		<%= image_tag("ruby-icon-mini.png", id: "logo", alt: "Ruby Logo") %>
-		<%= link_to "rubypaste", root_path, id: "logo" %>
-		<nav>
-			<ul class="nav navbar-nav navbar-right">
-				<li><%= link_to "Create new", new_snippet_path %></li>
-				<li><%= link_to "All snippets", root_path %></li>
-				<li><%= link_to "About", about_path %></li>
-			</ul>
-		</nav>
-	</div>
+<header class="navbar navbar-fixed-top">
+	<nav>
+		<%= link_to "Rubypaste", root_path, class: "brand" %>
+		<ul class="nav navbar-nav">
+			<li class="create">
+				<%= link_to glyph("plus", "Create new"), new_snippet_path %>
+			</li>
+			<li><%= link_to "All snippets", root_path %></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><%= link_to glyph("log-in", "Sign in"), "#" %></li>
+		</ul>
+	</nav>
 </header>

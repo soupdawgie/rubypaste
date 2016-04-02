@@ -1,13 +1,13 @@
-<div class="snippet-container">
-	<span class="title-links">
+<div class="snippet">
+	<div class="title">
 		<h3>
 		<%= action_name == 'show' ?
 				snippet.title : (link_to snippet.title, snippet) %>
 		</h3>
 		<%= render 'copy_link', object: snippet %>
-		<%= link_to "edit",   edit_snippet_path(snippet), id: "sub_button" %>
-		<%= link_to "delete", snippet, method: :delete, data: { confirm: "You sure?" },
-																	 id: "sub_button" %>
-	</span>
-	<p class="code"><%= snippet.code %></p>
+		<%= link_to glyph("edit"), edit_snippet_path(snippet) %>
+		<%= link_to glyph("remove"), snippet, method: :delete,
+																					data: { confirm: "You sure?" } %>
+	</div>
+	<div class="code"><%= snippet.code %></div>
 </div>
