@@ -28,12 +28,25 @@ body {
   font-size: 16px;
   color: white;
 	padding-top: 80px;
-	padding-bottom: 60px;
+	padding-bottom: 120px;
   background-color: $all-cs;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 a {
   color: white;
+  &:hover {
+    color: $hover_color;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $hover_color;
+    text-decoration: none;
+  }
 }
 
 div.alert {
@@ -46,9 +59,6 @@ div.col-md-8 {
   background-color: #272822;
 	a {
     text-decoration: underline;
-		&:hover {
-			color: $hover-color;
-		}
 	}
 }
 
@@ -66,12 +76,10 @@ header.navbar {
     margin-top: 5px;
     ul {
       margin: 4px 0px 0px 20px;
-      li {
-        a {
-          &:hover {
-            color: $hover_color;
-            background-color: transparent;
-          }
+      a {
+        &:hover {
+          color: $hover_color;
+          background-color: transparent;
         }
       }
       li.create {
@@ -83,20 +91,22 @@ header.navbar {
           border-radius: 3px;
           color: white;
           background-color: #363b4a;
-
-        } }
+          }
+        }
       }
+    }
+    ul.navbar-right {
+      margin-right: 30px;
     }
   }
 }
 
 .brand {
   float: left;
-  margin: 0px 10px 0px 15px;
+  margin: 0px 10px 0px 40px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 40px;
   letter-spacing: -2px;
-  // text-transform: uppercase;
 		&:hover {
       color: white;
 			text-decoration: none;
@@ -109,19 +119,28 @@ header.navbar {
 
 /* footer */
 
-footer {
-  padding: 10px 0px 10px 113px;
-  border-top: 0.5px solid $hover-color;
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  margin-left: -15px;
+  padding: 35px 0px 25px 40px;
 	background-color: $black-eye;
-	a {
-  	font-weight: bold;
-		color: #ff0e1d;
-		&:hover {
-			color: $hover-color;
-			text-decoration: none;
-		}
-	}
+  li {
+    a {
+      padding: 0px 15px 15px 0px;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  small {
+    display: block;
+    clear:both;
+  }
 }
+
 
 /* forms */
 
@@ -142,23 +161,22 @@ form label {
 
 form.new_snippet, form.edit_snippet {
   textarea {
-  padding: 10px;
-  resize: vertical;
-	border: none;
-	font-family: monospace;
-  color: white;
-	background-color: #272822;
-	white-space: pre;
+    padding: 10px;
+    resize: vertical;
+  	border: none;
+  	font-family: monospace;
+    color: white;
+  	background-color: #272822;
+  	white-space: pre;
   }
 
   input {
-   padding: 20px;
-   padding-left: 10px;
-   border: none;
-   font-size: 24px;
-   color: white;
-   background-color: #1d1d16;
-   white-space: pre;
+     padding: 20px 20px 20px 10px;
+     border: none;
+     font-size: 24px;
+     color: white;
+     background-color: #1d1d16;
+     white-space: pre;
  }
 }
 
