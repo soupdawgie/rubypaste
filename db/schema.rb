@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160331175741) do
+ActiveRecord::Schema.define(version: 20160403055935) do
 
   create_table "snippets", force: :cascade do |t|
     t.string   "title"
@@ -20,5 +20,7 @@ ActiveRecord::Schema.define(version: 20160331175741) do
     t.datetime "updated_at", null: false
     t.string   "token"
   end
+
+  add_index "snippets", ["token"], name: "index_snippets_on_token", unique: true
 
 end
