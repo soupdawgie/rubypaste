@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get '/about' => 'static_pages#about'
-  get '/:token' => 'snippets#show'
 
   resources :snippets, param: :token
   root 'snippets#index'

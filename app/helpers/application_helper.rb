@@ -8,11 +8,7 @@ module ApplicationHelper
 			page_title + " | " + base_title
 		end
 	end
-
-	def snippet_url(object)
-		root_url + object.token
-	end
-
+	
 	def glyph(name, text="")
 		"<i class='glyphicon glyphicon-#{name}'></i>#{" " + text}".html_safe
 	end
