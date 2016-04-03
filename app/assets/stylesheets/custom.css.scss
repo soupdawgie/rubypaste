@@ -1,7 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "monokai-sublime";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
+@import "agate";
 
 /* color set */
 
@@ -10,7 +9,8 @@ $red: #B11623;
 $redder: #9F111B;
 $black-eye: #292C37;
 $all-cs: #CCCCCC;
-$hover_color: #A7ACBE;
+$hover-color: #A7ACBE;
+$div-color: #333333;
 
 /* miscellaneous */
 
@@ -25,11 +25,12 @@ $hover_color: #A7ACBE;
 /* universal */
 
 body {
-  font-size: 16px;
+  padding-top: 80px;
+  padding-bottom: 150px;
   color: white;
-	padding-top: 80px;
-	padding-bottom: 120px;
   background-color: $all-cs;
+  font-size: 16px;
+  font-family: "LiberationSans";
 }
 
 html {
@@ -40,11 +41,11 @@ html {
 a {
   color: white;
   &:hover {
-    color: $hover_color;
+    color: $hover-color;
     text-decoration: underline;
   }
   &:focus {
-    color: $hover_color;
+    color: $hover-color;
     text-decoration: underline;
   }
 }
@@ -56,20 +57,43 @@ div.alert {
 div.col-md-10 {
   padding: 10px;
   border-radius: 5px;
-  background-color: #272822;
+  background-color: $div-color;
 	a {
     text-decoration: underline;
 	}
 }
 
-.pagination {
-	margin: 0px;
+div.pagination {
+  margin-top: 15px;
+  ul {
+    li {
+      a {
+        color: $red;
+        &:hover {
+          color: $black-eye;
+        }
+      }
+    }
+    li.active {
+      a {
+        color: white;
+        background-color: $red;
+        border-color: $red;
+        &:hover {
+          background-color: $black-eye;
+        }
+      }
+    }
+  }
+}
+
+div.container-fluid {
+  padding: 0px 40px 0px 40px;
 }
 
 /* header */
 
 header.navbar {
-  overflow: visible;
   height: 70px;
 	background-color: $red;
   nav {
@@ -78,7 +102,7 @@ header.navbar {
       margin: 4px 0px 0px 20px;
       a {
         &:hover {
-          color: $hover_color;
+          color: $hover-color;
           background-color: transparent;
         }
       }
@@ -124,7 +148,7 @@ footer.footer {
   bottom: 0;
   width: 100%;
   height: 120px;
-  margin-left: -15px;
+  margin-left: -45px;
   padding: 35px 0px 25px 40px;
 	background-color: $black-eye;
   li {
@@ -146,40 +170,41 @@ footer.footer {
 
 /* forms */
 
-input.btn {
-	margin-top: 20px;
-  border: none;
-	background-color: #1d1d16;
-	&:hover {
-		background-color: $hover-color;
-	}
-}
-
-form label {
-	margin-top: 20px;
-	font-size: 18px;
-	font-weight: normal;
-}
-
 form.new_snippet, form.edit_snippet {
-  textarea {
-    padding: 10px;
-    resize: vertical;
-  	border: none;
-  	font-family: monospace;
-    color: white;
-  	background-color: #272822;
-  	white-space: pre;
-  }
-
   input {
      padding: 20px 20px 20px 10px;
      border: none;
      font-size: 24px;
      color: white;
-     background-color: #1d1d16;
+     background-color: #404040;
      white-space: pre;
- }
+  }
+  textarea {
+    padding: 10px;
+    resize: vertical;
+  	border: none;
+  	font-family: "DejaVuSansMono";
+    font-size: 16px;
+    color: white;
+  	background-color: $div-color;
+  	white-space: pre;
+  }
+  label {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  input.btn {
+  	margin-top: 20px;
+    padding: 10px;
+    border: none;
+  	background-color: $redder;
+    text-align: center;
+  	&:hover {
+  		background-color: $red;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.19);
+  	}
+  }
 }
 
 /* snippets — to be redefined http://www.w3schools.com/bootstrap/bootstrap_panels.asp */
@@ -192,7 +217,7 @@ form.new_snippet, form.edit_snippet {
 		width: 100%;
 		padding: 10px;
 		border-radius: 5px 5px 0px 0px;
-    background-color: #1d1d16;
+    background-color: #404040;
 		a {
 			&:hover {
 				text-decoration: none;
@@ -211,7 +236,7 @@ form.new_snippet, form.edit_snippet {
 	div.code {
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
-    font-family: monospace;
+    font-family: "DejaVuSansMono";
 		white-space: pre;
 	}
 }
