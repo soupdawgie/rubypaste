@@ -18,7 +18,15 @@ group :development, :test do
   gem 'byebug',      '8.2.2'
   gem 'sqlite3',     '1.3.11'
   gem 'spring',      '1.6.3'
+end
+
+group :development do
   gem 'web-console', '3.0'
+end
+
+group :test do
+  gem 'minitest-reporters', '1.1.8'
+  gem 'mini_backtrace',     '0.1.3'
 end
 
 group :production do

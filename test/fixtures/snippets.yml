@@ -1,9 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  snippet: MyText
+  title: "any title"
+  code: "some code"
+  token: <%= Snippet.new_token %>
 
 two:
-  title: MyString
-  snippet: MyText
+  title: "any title"
+  code: "some more code"
+  token: <%= Snippet.new_token %>
+
+<% 10.times do |n| %>
+snippet_<%= n %>:
+  title: <%= "title-#{n}" %>
+  code: <%= "some code #{n}" %>
+  token: <%= Snippet.new_token %>
+<% end %>
