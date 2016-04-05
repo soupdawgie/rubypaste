@@ -27,4 +27,12 @@ class SnippetsEditTest < ActionDispatch::IntegrationTest
     assert @one.code, code
   end
 
+  test "edit snippet form" do
+    get edit_snippet_path(@one)
+    assert_select "title", full_title("Edit snippet")
+    assert_select "label",         count: 2
+    assert_select ".form-control", count: 2
+    assert_select "input[type=?]", "submit"
+  end
+
 end
