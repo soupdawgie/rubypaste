@@ -28,11 +28,6 @@ class SnippetTest < ActiveSupport::TestCase
     end
   end
 
-  test "chars and lines should be counted" do
-    @snippet.save
-    assert_equal @snippet.count_stats[:chars], @snippet.stats[:chars]
-    assert_equal @snippet.count_lines, @snippet.lines
-
   test "title should be set automatically if nil" do
     @snippet.title = nil
     @snippet.save
