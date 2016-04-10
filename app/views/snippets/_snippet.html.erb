@@ -10,4 +10,10 @@
 																					data: { confirm: "You sure?" } %>
 	</div>
 	<div class="code"><%= snippet.code %></div>
+	<div class="stats">
+		<ul>
+			<li>Created <%= count_time(snippet) %> ago</li>
+			<li>Chars: <%= count_code(snippet) %></li>
+			<li>Lines: <%= count_lines(snippet) %></li>
+		</ul>
 </div>

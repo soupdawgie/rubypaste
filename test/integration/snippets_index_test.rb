@@ -17,6 +17,8 @@ class SnippetsIndexTest < ActionDispatch::IntegrationTest
       assert_select "a[data-clipboard-text=?]", snippet_url(snippet)
       assert_select "a[data-method=?]", "delete"
       assert_select "div.code"
+      assert_select "div.stats>li", snippet.chars
+      assert_select "div.stats>li", snippet.lines
     end
     assert_difference "Snippet.count", -1 do
       delete snippet_path(@one)

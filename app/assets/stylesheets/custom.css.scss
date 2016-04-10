@@ -235,8 +235,19 @@ form.new_snippet, form.edit_snippet {
 	}
 	div.code {
     padding: 10px;
-    border-radius: 0px 0px 5px 5px;
     font-family: "DejaVuSansMono";
 		white-space: pre;
 	}
+  div.stats {
+    border-radius: 0px 0px 5px 5px;
+    background-color: #404040;
+    ul {
+      padding: 5px 0px 5px 10px;
+      list-style: none;
+      li {
+        display: inline;
+        margin-right: 10px;
+      }
+    }
+  }
 }

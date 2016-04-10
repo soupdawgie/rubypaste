@@ -8,8 +8,9 @@ module ApplicationHelper
 			page_title + " | " + base_title
 		end
 	end
-	
+
 	def glyph(name, text="")
 		"<i class='glyphicon glyphicon-#{name}'></i>#{" " + text}".html_safe
 	end
+
 end

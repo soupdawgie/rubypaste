@@ -8,7 +8,7 @@ class Snippet < ActiveRecord::Base
 		read_attribute(:title).presence || created_at.strftime("%d %B %Y, %H:%M")
 	end
 
-	#
+	# Create urlsafe string of 10 characters
 	def self.new_token
 		SecureRandom.urlsafe_base64(10)
 	end
@@ -24,4 +24,5 @@ class Snippet < ActiveRecord::Base
 		def create_token
 			self.token = Snippet.new_token
 		end
+
 end

@@ -15,6 +15,8 @@ class SnippetsShowTest < ActionDispatch::IntegrationTest
     assert_select "a[data-clipboard-text=?]", snippet_url(@one)
     assert_select "a[data-method=?]", "delete"
     assert_select "div.code"
+    assert_select "div.stats>li", @one.chars
+    assert_select "div.stats>li", @one.lines
   end
 
 end
