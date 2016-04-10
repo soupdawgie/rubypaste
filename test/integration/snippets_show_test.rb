@@ -14,9 +14,10 @@ class SnippetsShowTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", edit_snippet_path(@one)
     assert_select "a[data-clipboard-text=?]", snippet_url(@one)
     assert_select "a[data-method=?]", "delete"
-    assert_select "div.code"
-    assert_select "div.stats>li", @one.chars
-    assert_select "div.stats>li", @one.lines
+    assert_select "div.code", @one.code
+    assert_select "li", "Created #{count_time(@one)} ago"
+    assert_select "li", "Chars: #{count_code(@one)}"
+    assert_select "li", "Lines: #{count_lines(@one)}"
   end
 
 end

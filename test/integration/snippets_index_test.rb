@@ -16,9 +16,10 @@ class SnippetsIndexTest < ActionDispatch::IntegrationTest
       assert_select "a[href=?]", edit_snippet_path(snippet)
       assert_select "a[data-clipboard-text=?]", snippet_url(snippet)
       assert_select "a[data-method=?]", "delete"
-      assert_select "div.code"
-      assert_select "div.stats>li", snippet.chars
-      assert_select "div.stats>li", snippet.lines
+      assert_select "div.code", snippet.code
+      assert_select "li", "Created #{count_time(snippet)} ago"
+      assert_select "li", "Chars: #{count_code(snippet)}"
+      assert_select "li", "Lines: #{count_lines(snippet)}"
     end
     assert_difference "Snippet.count", -1 do
       delete snippet_path(@one)
