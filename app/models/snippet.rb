@@ -1,4 +1,6 @@
 class Snippet < ActiveRecord::Base
+	belongs_to :user
+
 	validates :code, presence: true
 	before_create :create_token
 	default_scope -> { order(created_at: :desc) }

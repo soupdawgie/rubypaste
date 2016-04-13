@@ -8,7 +8,14 @@
 			<li><%= link_to "All snippets", root_path %></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><%= link_to glyph("log-in", "Sign in"), "#" %></li>
+			<% if current_user.nil? %>
+				<li><%= link_to glyph("log-in", "Sign in"), new_user_session_path %></li>
+				<li><%= link_to "Sign up", new_user_registration_path %></li>
+			<% else %>
+				<li><%= link_to glyph("user", "Edit profile"), edit_user_registration_path %></li>
+				<li><%= link_to glyph("log-out", "Sign out"),  destroy_user_session_path,
+				 																							 method: :delete %></li>
+			<% end %>
 		</ul>
 	</nav>
 </header>

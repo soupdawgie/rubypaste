@@ -91,6 +91,11 @@ div.container-fluid {
   padding: 0px 40px 0px 40px;
 }
 
+.form-control:focus {
+  border-color: none;
+  box-shadow: inset 0 1px 1px white, 0 0 8px grey;
+}
+
 /* header */
 
 header.navbar {
@@ -170,9 +175,10 @@ footer.footer {
 
 /* forms */
 
-form.new_snippet, form.edit_snippet {
+.new_snippet, .edit_snippet, .new_user, .edit_user {
   input {
-     padding: 20px 20px 20px 10px;
+    height:auto;
+     padding: 5px 0px 5px 10px;
      border: none;
      font-size: 24px;
      color: white;
@@ -195,6 +201,7 @@ form.new_snippet, form.edit_snippet {
     font-weight: normal;
   }
   input.btn {
+    display: block;
   	margin-top: 20px;
     padding: 10px;
     border: none;
@@ -204,6 +211,45 @@ form.new_snippet, form.edit_snippet {
   		background-color: $red;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.19);
   	}
+  }
+}
+
+.cancel-account {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: #ee7781;
+  border-radius: 3px;
+  text-align: center;
+  &:hover {
+    color: white;
+    background-color: #e94957;
+    text-decoration: none;
+  }
+  &:focus {
+    color: white;
+    background-color: #e94957;
+    text-decoration: none;
+  }
+}
+
+/* forms — overriding non-snippet styles */
+
+.user {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: $div-color;
+  border-radius: 5px;
+  input.form-control {
+    color: black;
+    background-color: white;
+  }
+  h1 {
+    margin-top: 0px;
+  }
+  input.btn {
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
 }
 

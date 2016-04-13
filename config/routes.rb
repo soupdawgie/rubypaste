@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+
   get '/about' => 'static_pages#about'
 
   resources :snippets, param: :token
