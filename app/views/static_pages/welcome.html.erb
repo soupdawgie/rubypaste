@@ -1,4 +1,23 @@
+<% provide(:title, "Welcome") %>
+
 <div class="jumbotron">
-  <h1>Yo dawg</h1>
-  <p>Check out my supadupa snippet storage.</p>
+  <h1>Welcome to the Rubypaste!</h1>
+  <p><strong>Rubypaste</strong> is a snippet storage for the code written (as you might guess) in <strong>Ruby</strong>—with the syntax highlighting in the manner of beautiful <strong>Agate</strong> theme.</p>
+  <%= image_tag("screenshot.png") %><br>
+  <%= link_to "Let me in!", new_user_registration_path, class: "btn btn-primary" %>
+</div>
+
+<div class="col-md-4 welcome">
+  <h4>Store your code securely</h4>
+  <p>Rubypaste uses Devise to run the authorization/authentication machinery—your snippets are in good hands.</p>
+</div>
+
+<div class="col-md-4 welcome">
+  <h4>Read your code easily</h4>
+  <p>Snippets are marked up with the <%= link_to "highlight.js", "https://highlightjs.org/" %> library—read the code like you do it in your favourite text editor.</p>
+</div>
+
+<div class="col-md-4 welcome">
+  <h4>Share your code with the crowd—or not</h4>
+  <p>Change visibility of the snippets with the Private checkbox—keep your billion-dollar ideas a secret.</p>
 </div>

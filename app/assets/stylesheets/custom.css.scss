@@ -61,7 +61,7 @@ div.alert {
 	margin-top: 10px;
 }
 
-div.col-md-10 {
+div.static {
   padding: 10px;
   border-radius: 5px;
   background-color: $div-color;
@@ -327,4 +327,36 @@ footer.footer {
       }
     }
   }
+}
+
+/* welcome */
+
+.jumbotron {
+  margin-top: 20px;
+  text-align: center;
+  background-color: $div-color;
+  .btn {
+    padding: 20px 30px 20px 30px;
+    font-size: 22px;
+    background-color: #15b156;
+    border: none;
+    &:hover {
+      background-color: #18cd64;
+      box-shadow: inset 0 1px 1px #15b156, 0 0 8px white;
+    }
+  }
+  img {
+    width: 70%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.welcome {
+  height: 155px;
+  padding: 20px;
+  background-color: $div-color;
 }
