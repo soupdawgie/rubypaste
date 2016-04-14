@@ -16,12 +16,14 @@ ActiveRecord::Schema.define(version: 20160412192623) do
   create_table "snippets", force: :cascade do |t|
     t.string   "title"
     t.text     "code"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "token"
   end
 
   add_index "snippets", ["token"], name: "index_snippets_on_token", unique: true
+  add_index "snippets", ["user_id", "created_at"], name: "index_snippets_on_user_id_and_created_at"
 
   create_table "users", force: :cascade do |t|
     t.string   "username"

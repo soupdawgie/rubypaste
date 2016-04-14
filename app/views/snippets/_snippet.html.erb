@@ -4,10 +4,12 @@
 		<%= action_name == 'show' ?
 				snippet.title : (link_to snippet.title, snippet) %>
 		</h3>
-		<%= render 'copy_link', object: snippet %>
-		<%= link_to glyph("edit"), edit_snippet_path(snippet) %>
-		<%= link_to glyph("remove"), snippet, method: :delete,
-																					data: { confirm: "You sure?" } %>
+		<% if snippet.user == current_user %>
+			<%= render 'copy_link', object: snippet %>
+			<%= link_to glyph("edit"), edit_snippet_path(snippet) %>
+			<%= link_to glyph("remove"), snippet, method: :delete,
+																						data: { confirm: "You sure?" } %>
+		<% end %>
 	</div>
 	<div class="code"><%= snippet.code %></div>
 	<div class="stats">
