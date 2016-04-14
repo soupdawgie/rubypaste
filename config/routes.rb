@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  root 'snippets#index'
+
   devise_for :users
+  resources :snippets, param: :token
 
   get '/about' => 'static_pages#about'
-
-  resources :snippets, param: :token
-  root 'snippets#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

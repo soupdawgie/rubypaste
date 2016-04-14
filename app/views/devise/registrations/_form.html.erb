@@ -4,7 +4,7 @@
   <%= f.label :email %>
   <%= f.email_field :email, autofocus: true, class: 'form-control' %>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? && controller.action_name == 'edit' %>
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? && 'edit|update'.include?(action_name) %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
@@ -15,7 +15,7 @@
   <%= f.text_field :name, class: 'form-control' %>
 
   <%= f.label :password %>
-  <% if @minimum_password_length && controller.action_name == 'new' %>
+  <% if @minimum_password_length %>
     (<%= @minimum_password_length %> characters minimum)
   <% else %>
     (fill only if you want to change password)
@@ -25,7 +25,7 @@
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
 
-  <% if controller.action_name == 'edit' %>
+  <% if 'edit|update'.include?(action_name) %>
     <%= f.label :current_password %> (enter to confirm your changes)
     <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
   <% end %>

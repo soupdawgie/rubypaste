@@ -1,15 +1,18 @@
 module DeviseHelper
+
   def devise_error_messages!
-    return '' if resource.errors.empty?
-
-    messages = resource.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
-    html = <<-HTML
-    <div class="alert alert-error alert-danger"> <button type="button"
-    class="close" data-dismiss="alert">×</button>
-      #{messages}
-    </div>
-    HTML
-
-    html.html_safe
+    if resource.errors.any?
+      messages = resource.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
+      count = pluralize(resource.errors.count, "error")
+      html = <<-HTML
+      <div class="alert alert-danger">
+        The form contains #{count}:
+        #{messages}
+      </div>
+      HTML
+      
+      html.html_safe
+    end
   end
+
 end
