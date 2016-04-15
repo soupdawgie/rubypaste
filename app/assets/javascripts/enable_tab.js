@@ -7,5 +7,5 @@ $("textarea").keydown(function(e) {
     $this.val($this.val().substring(0, start) + "\t" + $this.val().substring(end));
     this.selectionStart = this.selectionEnd = start + 1;
     return false;
-  }
+  };
 });

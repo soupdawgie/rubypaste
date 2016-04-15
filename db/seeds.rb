@@ -28,8 +28,8 @@ a = 1
 b = n + 1
 
 n.times do
-    puts ("#" * a).rjust(b - 1)
-    a += 1
+  puts ("#" * a).rjust(b - 1)
+  a += 1
 end
 code
 
@@ -38,12 +38,12 @@ time = gets.strip
 reg = /(\d*):(\d*):(\d*)(\w*)/.match(time)
 
 def converter(a)
-    if a[3] == "PM" && a[0] != "12"
-        a[0] = (a[0].to_i + 12).to_s
-    elsif a[3] == "AM" && a[0] == "12"
-        a[0] = "00"
-    end
-    puts "\#{a[0]}:\#{a[1]}:\#{a[2]}"
+  if a[3] == "PM" && a[0] != "12"
+      a[0] = (a[0].to_i + 12).to_s
+  elsif a[3] == "AM" && a[0] == "12"
+      a[0] = "00"
+  end
+  puts "\#{a[0]}:\#{a[1]}:\#{a[2]}"
 end
 
 converter(reg[1..4])
