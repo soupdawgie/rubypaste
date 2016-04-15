@@ -4,7 +4,7 @@ class SnippetTest < ActiveSupport::TestCase
 
   def setup
     @snippet       = Snippet.new(title: "text", code: "some code")
-    @other_snippet = Snippet.create(title: "t",    code: "c")
+    @other_snippet = Snippet.create(title: "t", code: "c")
   end
 
   test "should be valid" do

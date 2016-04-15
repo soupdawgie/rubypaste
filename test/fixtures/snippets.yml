@@ -4,15 +4,18 @@ one:
   title: "any title"
   code: "some code"
   token: <%= Snippet.new_token %>
+  user_id: 1
 
 two:
   title: "any title"
   code: "some more code"
   token: <%= Snippet.new_token %>
+  user_id: 1
 
 <% 10.times do |n| %>
 snippet_<%= n %>:
   title: <%= "title-#{n}" %>
   code: <%= "some code #{n}" %>
   token: <%= Snippet.new_token %>
+  user_id: 1
 <% end %>
