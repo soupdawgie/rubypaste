@@ -2,14 +2,16 @@
 
 <div class="col-md-6 col-md-offset-3 user">
   <h1>Sign in</h1>
-
+  <h4>or <%= link_to "take a tour", "/users/sign_in?guest=1" %></h4>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
     <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+    <%= f.email_field :email, autofocus: true, class: 'form-control',
+                                               value: guest("email") %>
 
     <%= f.label :password %>
-    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control',
+                                                         value: guest("password") %>
 
     <% if devise_mapping.rememberable? -%>
       <%= f.check_box :remember_me %>

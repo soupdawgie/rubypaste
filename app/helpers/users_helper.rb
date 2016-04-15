@@ -9,4 +9,13 @@ module UsersHelper
       user.email
     end
   end
+
+	def guest(obj)
+		if obj == "email" && params[:guest] == '1'
+			"guest@rubypaste.io"
+		elsif obj == "password" && params[:guest] == '1'
+			"guestpassword"
+		end
+	end
+
 end

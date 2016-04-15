@@ -2,9 +2,11 @@
 <%= javascript_include_tag "load_highlight.js" %>
 
 <h1>All snippets</h1>
-
-<% @snippets.each do |snippet| %>
-	<%= render snippet %>
+<% if @snippets.empty? %>
+	<h4>You don't have any snippets yet. Go ahead and save some delightful code!</h4>
+<% else %>
+	<% @snippets.each do |snippet| %>
+		<%= render snippet %>
+	<% end %>
+	<%= will_paginate %>
 <% end %>
-
-<%= will_paginate %>

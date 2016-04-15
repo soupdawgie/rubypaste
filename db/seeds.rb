@@ -6,51 +6,68 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-20.times do
-  Snippet.create!(code:
-  'puts "Enter two separated values to start with:"
-  array = gets.split(/[^0-9]/)
-  array.map! { |i| i.to_i }
-  puts "Enter the length of necessary consequence:"
-  length = gets.to_i
+fib = <<-code
+puts "Enter two separated values to start with:"
+array = gets.split(/[^0-9]/)
+array.map! { |i| i.to_i }
+puts "Enter the length of necessary consequence:"
+length = gets.to_i
 
-  (length - 2).times do
-    array << array[-1] + array[-2]
-  end
-
-  puts "Here is the result:"
-  print array')
-  
-  Snippet.create!(code:
-  'if c < 255 && switch == 0
-    if !(0...15).include?(c)
-      z = ""
-    end
-    c += 1
-    if c == 255
-      switch = 1
-      c = 0
-      z = "0"
-    end
-  elsif b < 255 && switch == 1
-    if !(0...15).include?(b)
-      y = ""
-    end
-    b += 1
-    if b == 255
-      switch = 2
-      b = 0
-      y = "0"
-    end
-  elsif a < 255 && switch == 2
-    if !(0...15).include?(a)
-      x = ""
-    end
-    a += 1
-    if a == 255
-      switch = 3
-      a = 0
-      x = "0"
-    end
-  end')
+(length - 2).times do
+  array << array[-1] + array[-2]
 end
+
+puts "Here is the result:"
+print array
+puts ""
+code
+
+staircase = <<-code
+n = gets.strip.to_i
+a = 1
+b = n + 1
+
+n.times do
+    puts ("#" * a).rjust(b - 1)
+    a += 1
+end
+code
+
+military = <<-code
+time = gets.strip
+reg = /(\d*):(\d*):(\d*)(\w*)/.match(time)
+
+def converter(a)
+    if a[3] == "PM" && a[0] != "12"
+        a[0] = (a[0].to_i + 12).to_s
+    elsif a[3] == "AM" && a[0] == "12"
+        a[0] = "00"
+    end
+    puts "\#{a[0]}:\#{a[1]}:\#{a[2]}"
+end
+
+converter(reg[1..4])
+code
+
+military_ruby = <<-code
+require 'date'
+time = gets.strip
+puts DateTime.parse(time).strftime("%H:%M:%S")
+code
+
+User.create!(email: "soupdawgie@gmail.com",
+             name:  "Vladimir",
+             username: "soupdawgie",
+             password: "qweqweqwe",
+             password_confirmation: "qweqweqwe")
+
+@guest = User.create!(email: "guest@rubypaste.io",
+                      name:  "Stranger",
+                      username: "guest",
+                      password: "guestpassword",
+                      password_confirmation: "guestpassword")
+
+@guest.snippets.build(title: "Staircase", code: staircase).save
+@guest.snippets.build(code: fib).save
+@guest.snippets.build(title: "Military time to 24H", code: military).save
+@guest.snippets.build(title: "Military time to 24H: Ruby style", code: military_ruby).save
