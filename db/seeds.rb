@@ -70,4 +70,4 @@ User.create!(email: "soupdawgie@gmail.com",
 @guest.snippets.build(title: "Staircase", code: staircase).save
 @guest.snippets.build(code: fib).save
 @guest.snippets.build(title: "Military time to 24H", code: military).save
-@guest.snippets.build(title: "Military time to 24H: Ruby style", code: military_ruby).save
+@guest.snippets.build(title: "Military time to 24H — Ruby style", code: military_ruby).save
