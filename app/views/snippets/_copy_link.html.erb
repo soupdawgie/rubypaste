@@ -1,10 +1,5 @@
-<script>
-  // Launches the clipboard.js script
-  new Clipboard('.copy');
+<%= javascript_include_tag "copy_link.js" %>
 
-  // Prevents from jumping to the top of the page after clicking a link
-  $('a.copy').click(function(e) { e.preventDefault(); });
-</script>
 <a href="" class="copy" data-clipboard-text="<%= snippet_url(object) %>">
   <%= glyph("share") %>
 </a>
