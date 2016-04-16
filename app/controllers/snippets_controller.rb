@@ -13,6 +13,12 @@ class SnippetsController < ApplicationController
 
   def show
     @snippet = Snippet.find_by(token: params[:token])
+    if @snippet.public? || @snippet.user == current_user
+      render 'show'
+    else
+      redirect_to root_url
+      flash[:alert] = "The snippet is private."
+    end
   end
 
   def new
@@ -54,7 +60,7 @@ end
   private
 
     def snippet_params
-      params.require(:snippet).permit(:code, :title, :token)
+      params.require(:snippet).permit(:code, :title, :token, :public)
     end
 
     def correct_user

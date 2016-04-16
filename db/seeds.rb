@@ -33,7 +33,7 @@ n.times do
 end
 code
 
-military = <<-code
+time = <<-code
 time = gets.strip
 reg = /(\d*):(\d*):(\d*)(\w*)/.match(time)
 
@@ -49,7 +49,7 @@ end
 converter(reg[1..4])
 code
 
-military_ruby = <<-code
+time_ruby = <<-code
 require 'date'
 time = gets.strip
 puts DateTime.parse(time).strftime("%H:%M:%S")
@@ -69,5 +69,5 @@ User.create!(email: "soupdawgie@gmail.com",
 
 @guest.snippets.build(title: "Staircase", code: staircase).save
 @guest.snippets.build(code: fib).save
-@guest.snippets.build(title: "Military time to 24H", code: military).save
-@guest.snippets.build(title: "Military time to 24H — Ruby style", code: military_ruby).save
+@guest.snippets.build(title: "12-hour clock to 24", code: time).save
+@guest.snippets.build(title: "12-hour clock to 24 — Ruby style", code: time_ruby, public: false).save

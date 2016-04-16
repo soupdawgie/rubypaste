@@ -11,4 +11,10 @@ module SnippetsHelper
   def count_time(obj)
     time_ago_in_words(obj.created_at)
   end
+
+  def visibility(obj)
+    obj.public? ? str = "public" : str = "private"
+    "<li class=\"#{str}\">#{str.capitalize}</li>"
+  end
+
 end

@@ -5,7 +5,9 @@
 				snippet.title : (link_to snippet.title, snippet) %>
 		</h3>
 		<% if snippet.user == current_user %>
-			<%= render 'copy_link', object: snippet %>
+			<% if snippet.public? %>
+				<%= render 'copy_link', object: snippet %>
+			<% end %>
 			<%= link_to glyph("edit"), edit_snippet_path(snippet) %>
 			<%= link_to glyph("remove"), snippet, method: :delete,
 																						data: { confirm: "You sure?" } %>
@@ -14,6 +16,7 @@
 	<div class="code"><%= snippet.code %></div>
 	<div class="stats">
 		<ul>
+			<%= visibility(snippet).html_safe %>
 			<li>Created <%= count_time(snippet) %> ago</li>
 			<li>Chars: <%= count_code(snippet) %></li>
 			<li>Lines: <%= count_lines(snippet) %></li>

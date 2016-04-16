@@ -7,5 +7,10 @@
 	<%= f.label :code, yield(:code_label) %>
 	<%= f.text_area :code, rows: 15, class: 'form-control' %>
 
+	<div class="public">
+	<%= f.check_box :public %>
+	<%= f.label :public, "Public (unselect to hide from prying eyes)" %>
+	</div>
+
 	<%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
