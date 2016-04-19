@@ -19,7 +19,10 @@ group :development, :test do
   gem 'byebug',      '8.2.2'
   gem 'sqlite3',     '1.3.11'
   gem 'spring',      '1.6.3'
-  gem 'rspec-rails',       '3.4.0'
+  gem 'rspec-rails', '~> 3.4.0'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do
