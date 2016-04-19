@@ -26,4 +26,8 @@ RSpec.describe Snippet, type: :model do
   it 'is public by default' do
     expect(subject.public).to be true
   end
+
+  it 'belongs_to user' do
+    expect(subject.user_id).to eq 1
+  end
 end
