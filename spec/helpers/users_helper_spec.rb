@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe UsersHelper, type: :helper do
   subject { create(:user) }
 
-  describe "appeal" do
+  describe "#appeal" do
     it "returns name" do
       expect(appeal(subject)).to eq "Hi, #{subject.name}!"
     end
@@ -20,7 +20,7 @@ RSpec.describe UsersHelper, type: :helper do
     end
   end
 
-  describe "guest" do
+  describe "#guest" do
     it "returns guest email" do
       params[:guest] = '1'
       expect(guest("email")).to eq "guest@rubypaste.io"

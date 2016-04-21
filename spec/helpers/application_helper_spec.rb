@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ApplicationHelper, type: :helper do
-  describe "full_title" do
+  describe "#full_title" do
     it "returns base title" do
       expect(full_title("")).to eq "Rubypaste"
     end
@@ -12,7 +12,7 @@ RSpec.describe ApplicationHelper, type: :helper do
     end
   end
 
-  describe "glyph" do
+  describe "#glyph" do
     it "returns <i> with passed name" do
       name = "log-in"
       expect(glyph("log-in")).to eq "<i class='glyphicon glyphicon-#{name}'></i>#{" "}".html_safe

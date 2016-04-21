@@ -4,7 +4,7 @@
 
 Made for the sake of exercising and getting my hands dirty in Rails, RSpec and some JS after finishing The Rails Tutorial.
 
-###Stack and features:
+###Stack and features
 
 * Framework: [Ruby 2.2.4](https://www.ruby-lang.org/en/) on [Rails 4.2.2](http://rubyonrails.org/).
 
@@ -14,17 +14,17 @@ Made for the sake of exercising and getting my hands dirty in Rails, RSpec and s
 
 * Share URLs: [clipboard.js](https://clipboardjs.com/).
 
-* Authorization: [devise](https://github.com/plataformatec/devise), heavily customized views, some before_actions.
+* Authorization: [Devise](https://github.com/plataformatec/devise), heavily customized views, some before_actions.
 
-* Testing: **minitest**, **RSpec** (current test suite is really weak, I'm working on it).
+* Testing: **RSpec**, **Capybara**, **FactoryGirl**.
 
-* The snippets are accessed with a **urlsafe_base64** string of 10 characters instead incremental IDs.
+* The snippets are accessed with a **urlsafe_base64** string of 10 characters instead of incremental IDs.
 
 * Guest user: DB seeds + form autofill as first implementation.
 
 ###What's up next
 * **Done: the "Public" checkbox to hide the snippets.**
-* **Rock-solid RSpec test suit.**
+* **In progress: Rock-solid RSpec test suit.**
 * **User authorization via usernames and emails.**
 * Mailers configuration to make account confirmations and password resets available.
 * Guest user reimplementation (user must be reset after the browser session ends).

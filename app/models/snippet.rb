@@ -10,9 +10,10 @@ class Snippet < ActiveRecord::Base
 		read_attribute(:title).presence || created_at.strftime("%d %B %Y, %H:%M")
 	end
 
-	# Create urlsafe string of 10 characters
+	# Create urlsafe string of 10 characters.
+	# Passing 7 because "The length of the result string is about 4/3 of n".
 	def self.new_token
-		SecureRandom.urlsafe_base64(10)
+		SecureRandom.urlsafe_base64(7)
 	end
 
 	# Generate URLs with tokens instead of ids
