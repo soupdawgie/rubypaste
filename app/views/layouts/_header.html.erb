@@ -1,23 +1,22 @@
 <header class="navbar navbar-fixed-top">
-	<nav>
-		<%= link_to "Rubypaste", root_path, class: "brand" %>
-		<% if user_signed_in? %>
-			<ul class="nav navbar-nav">
-				<li class="create">
-					<%= link_to glyph("plus", "Create new"), new_snippet_path %>
-				</li>
-				<li><%= link_to "My snippets", root_path %></li>
-			</ul>
-		<% end %>
-		<ul class="nav navbar-nav navbar-right">
-			<% if user_signed_in? %>
-				<li><%= link_to glyph("user", appeal(current_user)), edit_user_registration_path %></li>
-				<li><%= link_to glyph("log-out", "Sign out"),  destroy_user_session_path,
-																										 	 method: :delete %></li>
-			<% else %>
-				<li><%= link_to glyph("log-in", "Sign in"), new_user_session_path %></li>
-				<li><%= link_to "Sign up", new_user_registration_path %></li>
-			<% end %>
-		</ul>
-	</nav>
+  <nav>
+    <%= link_to "Rubypaste", root_path, class: "brand" %>
+    <% if user_signed_in? %>
+      <ul class="nav navbar-nav">
+        <li class="create">
+          <%= link_to glyph("plus", "Create new"), new_snippet_path %>
+        </li>
+        <li><%= link_to "My snippets", root_path %></li>
+      </ul>
+    <% end %>
+    <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+        <li><%= link_to glyph("user", appeal(current_user)), edit_user_registration_path %></li>
+        <li><%= link_to glyph("log-out", "Sign out"),  destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to glyph("log-in", "Sign in"), new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      <% end %>
+    </ul>
+  </nav>
 </header>

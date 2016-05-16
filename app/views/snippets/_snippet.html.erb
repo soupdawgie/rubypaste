@@ -1,25 +1,25 @@
 <div class="snippet">
-	<div class="title">
-		<h3>
-		<%= action_name == 'show' ?
-				snippet.title : (link_to snippet.title, snippet) %>
-		</h3>
-		<% if snippet.user == current_user %>
-			<% if snippet.public? %>
-				<%= render 'copy_link', object: snippet %>
-			<% end %>
-			<%= link_to glyph("edit"), edit_snippet_path(snippet) %>
-			<%= link_to glyph("remove"), snippet, method: :delete,
-																						data: { confirm: "You sure?" } %>
-		<% end %>
-	</div>
-	<div class="code"><%= snippet.code %></div>
-	<div class="stats">
-		<ul>
-			<%= visibility(snippet).html_safe %>
-			<li>Created <%= count_time(snippet) %> ago</li>
-			<li>Chars: <%= count_code(snippet) %></li>
-			<li>Lines: <%= count_lines(snippet) %></li>
-		</ul>
-	</div>
+  <div class="title">
+    <h3>
+    <%= action_name == 'show' ?
+        snippet.title : (link_to snippet.title, snippet) %>
+    </h3>
+    <% if snippet.user == current_user %>
+      <% if snippet.public? %>
+        <%= render 'copy_link', object: snippet %>
+      <% end %>
+      <%= link_to glyph("edit"), edit_snippet_path(snippet) %>
+      <%= link_to glyph("remove"), snippet, method: :delete,
+                                            data: { confirm: "You sure?" } %>
+    <% end %>
+  </div>
+  <div class="code"><%= snippet.code %></div>
+  <div class="stats">
+    <ul>
+      <%= visibility(snippet).html_safe %>
+      <li>Created <%= count_time(snippet) %> ago</li>
+      <li>Chars: <%= count_code(snippet) %></li>
+      <li>Lines: <%= count_lines(snippet) %></li>
+    </ul>
+  </div>
 </div>

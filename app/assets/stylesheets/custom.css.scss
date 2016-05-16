@@ -120,24 +120,24 @@ div.field_with_errors {
 /* alert (devise) */
 
 .alert-notice {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #468847;
-    text-align: left;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
  }
 
- .alert-alert {
-    background-color: #f2dede;
-    border-color: #eed3d7;
-    color: #b94a48;
-    text-align: left;
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
  }
 
 /* header */
 
 header.navbar {
   height: 70px;
-	background-color: $red;
+  background-color: $red;
   nav {
     margin-top: 5px;
     ul {
@@ -173,14 +173,14 @@ header.navbar {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 40px;
   letter-spacing: -2px;
-		&:hover {
-      color: white;
-			text-decoration: none;
-		}
-    &:focus {
-      color: white;
-      text-decoration: none;
-    }
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+  &:focus {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -192,7 +192,7 @@ footer.footer {
   height: 120px;
   margin-left: -40px;
   padding: 35px 0px 25px 40px;
-	background-color: $black-eye;
+  background-color: $black-eye;
   li {
     a {
       padding: 0px 15px 15px 0px;
@@ -225,12 +225,12 @@ footer.footer {
   textarea {
     padding: 10px;
     resize: vertical;
-  	border: none;
-  	font-family: "DejaVuSansMono";
+    border: none;
+    font-family: "DejaVuSansMono";
     font-size: 16px;
     color: white;
-  	background-color: $div-color;
-  	white-space: pre-wrap;
+    background-color: $div-color;
+    white-space: pre-wrap;
     tab-size: $tab-size;
   }
   label {
@@ -240,15 +240,15 @@ footer.footer {
   }
   input.btn {
     display: block;
-  	margin-top: 20px;
+    margin-top: 20px;
     padding: 10px;
     border: none;
-  	background-color: $redder;
+    background-color: $redder;
     text-align: center;
-  	&:hover {
-  		background-color: $red;
+    &:hover {
+      background-color: $red;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.19);
-  	}
+    }
   }
   .public {
     margin-top: 10px;
@@ -308,35 +308,35 @@ footer.footer {
 /* snippets — to be redefined http://www.w3schools.com/bootstrap/bootstrap_panels.asp */
 
 .snippet {
-	margin-top: 20px;
-	color: white;
-	div.title {
-		display: inline-block;
-		width: 100%;
-		padding: 10px 10px 7px 10px;
-		border-radius: 5px 5px 0px 0px;
+  margin-top: 20px;
+  color: white;
+  div.title {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px 7px 10px;
+    border-radius: 5px 5px 0px 0px;
     background-color: #404040;
-		a {
-			&:hover {
-				text-decoration: none;
-			}
+    a {
+      &:hover {
+        text-decoration: none;
+      }
       i {
         margin-left: 5px;
         &.glyphicon-share {
           margin-left: 10px;
         }
       }
-		}
-		h3 {
-			display: inline;
-		}
-	}
-	div.code {
+    }
+    h3 {
+      display: inline;
+    }
+  }
+  div.code {
     padding: 10px;
     font-family: "DejaVuSansMono";
     white-space: pre-wrap;
     tab-size: $tab-size;
-	}
+  }
   div.stats {
     border-radius: 0px 0px 5px 5px;
     background-color: #404040;

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :configure_sanitized_params, if: :devise_controller?
 
   def after_sign_in_path_for(resource)
-     request.env['omniauth.origin'] || snippets_path || root_path
+    request.env['omniauth.origin'] || snippets_path || root_path
   end
 
   protected
@@ -15,9 +15,7 @@ class ApplicationController < ActionController::Base
       u.permit(:email, :username, :name, :password, :password_confirmation)
     end
     devise_parameter_sanitizer.for(:account_update) do |u|
-      u.permit(:email, :username, :name, :password, :password_confirmation,
-                                                    :current_password)
+      u.permit(:email, :username, :name, :password, :password_confirmation, :current_password)
     end
   end
-
 end

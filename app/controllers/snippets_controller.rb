@@ -1,5 +1,4 @@
 class SnippetsController < ApplicationController
-
   before_action :correct_user,       only: [:edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
@@ -54,16 +53,15 @@ class SnippetsController < ApplicationController
     flash[:success] = "Snippet deleted."
     redirect_to root_path
   end
-
 end
 
   private
 
-    def snippet_params
-      params.require(:snippet).permit(:code, :title, :token, :public)
-    end
+  def snippet_params
+    params.require(:snippet).permit(:code, :title, :token, :public)
+  end
 
-    def correct_user
-      @snippet = current_user.snippets.find_by(token: params[:token])
-      redirect_to root_url if @snippet.nil?
-    end
+  def correct_user
+    @snippet = current_user.snippets.find_by(token: params[:token])
+    redirect_to root_url if @snippet.nil?
+  end
